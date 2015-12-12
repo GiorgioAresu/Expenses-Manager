@@ -11,12 +11,10 @@ Provides functionality for consumables goods and running costs, such as car fuel
 
 ## Usage
 
-#### Build docker image 
+`$ docker run -p <port>:10101 -d giorgioaresu/consumables`
 
-`docker build -t giorgioaresu/consumables .`
+where `<port>` is the port you want to bind to.
 
-#### Run the image
+#### Build the container yourself 
 
-`docker run -p <port>:10101 -d giorgioaresu/consumables`
-
-where `<port>` is the port you want to bind to
+`$ docker build -t $(whoami)/consumables .`
