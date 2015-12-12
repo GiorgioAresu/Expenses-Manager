@@ -1,0 +1,22 @@
+{
+  "name": "consumables",
+  "version": "1.0.0",
+  "description": "Consumable microservice for Expense-Manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiorgioAresu/Expenses-Manager.git"
+  },
+  "author": "Giorgio Aresu",
+  "license": "SEE LICENSE IN LICENSE FILE",
+  "bugs": {
+    "url": "https://github.com/GiorgioAresu/Expenses-Manager/issues"
+  },
+  "homepage": "https://github.com/GiorgioAresu/Expenses-Manager#readme",
+  "dependencies": {
+    "seneca": "^0.9.1"
+  }
+}
