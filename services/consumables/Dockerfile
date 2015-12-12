@@ -1,16 +1,16 @@
-FROM ubuntu:14.04
+FROM    centos:centos6
 
-# Install Node.js
-RUN apt-get -y update
-RUN apt-get install -y nodejs npm
+# Enable Extra Packages for Enterprise Linux (EPEL) for CentOS
+RUN     yum install -y epel-release
+# Install Node.js and npm
+RUN     yum install -y nodejs npm
 
-ADD . /src
-
+# Install app dependencies
+COPY package.json /src/package.json
 RUN cd /src; npm install
 
-ENV PORT 3001
-ENV NODE_ENV development
+# Bundle app source
+COPY . /src
 
-EXPOSE 3001
-
-#CMD ["node", "/src/server.js"]
+EXPOSE  10101
+CMD ["node", "/src/server.js"]
