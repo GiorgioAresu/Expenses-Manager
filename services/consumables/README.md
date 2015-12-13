@@ -11,9 +11,13 @@ Provides functionality for consumables goods and running costs, such as car fuel
 
 ## Usage
 
-`$ docker run -p <port>:10101 -d giorgioaresu/consumables`
+1. `$ docker run -p <port>:10101 -d giorgioaresu/consumables`
 
-where `<port>` is the port you want to bind to.
+	where `<port>` is the port you want to bind to.
+
+1. Navigate to 
+	
+	`http://<ip>:<port>/act?say=hello`
 
 #### Build the container yourself 
 
